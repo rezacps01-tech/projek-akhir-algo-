@@ -116,6 +116,7 @@ def tambahkan_produk(data_produk):
 def hapus_produk(data_produk):
     os.system('cls')
     print("ketik 0 untuk kembali\n")
+    print(tabulate(data_produk, headers='keys', tablefmt='fancy_grid'))
 
     
     while True:
@@ -475,3 +476,4 @@ def menu_owner(username):
 
 
 login()
+
